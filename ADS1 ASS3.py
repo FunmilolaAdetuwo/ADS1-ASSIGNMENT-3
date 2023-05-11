@@ -120,7 +120,7 @@ plt.scatter(xcen, ycen, c="k", marker="d", s=80)
 
 plt.xlabel("labor(1991)")
 plt.ylabel("labor(2021)")
-plt.title("2 clusters")
+plt.title("3 clusters")
 plt.show()
 
 #Scaling back to the original data and creating a plot on it original scale
@@ -140,7 +140,7 @@ plt.scatter(xc, yc, c="k", marker="d", s=80)
 
 plt.xlabel("1991")
 plt.ylabel("2021")
-plt.title("2 clusters")
+plt.title("3 clusters")
 plt.show()
 
 # Curve fitting
