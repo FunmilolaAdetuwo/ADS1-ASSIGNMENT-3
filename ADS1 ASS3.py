@@ -17,6 +17,32 @@ import scipy.optimize as opt
 from scipy.optimize import curve_fit
 
 
+#Using Def function to read the file
+
+"""
+Creating a def function to read in our datasets and skiprows the first 4 rows
+"""
+
+
+def read_data(filename, **others):
+    """
+    A function that reads in world bank indicator  data and returns the skip the first 4 rows
+        filename: the name of the world bank data that will be read for analysis 
+        and manupulation
+
+        **others: other arguments to pass into the functions as need be, such
+        as skipping the first 4 rows
+
+    Returns: 
+        The  dataset that has been read in with its first 4 rows skipped
+    """
+
+    # Reading in the climate dataset for to be used for analysis with first 4 rows skipped
+    world_data = pd.read_csv(filename, skiprows=4)
+
+    return world_data
+
+
 # Define the filenames
 laborforce = 'API_SL.TLF.TOTL.IN_DS2_en_csv_v2_5359352.csv'
 gdppercapital = 'API_NY.GDP.PCAP.KD.ZG_DS2_en_csv_v2_5358515.csv'
